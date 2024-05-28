@@ -37,7 +37,9 @@ class EccTask {
         log.atInfo().log("Signing the message...");
         ecdsa.update(plaintext.getBytes());
         byte[] signature = ecdsa.sign();
-        log.atInfo().addKeyValue("signature", Base64.getEncoder().encodeToString(signature)).log("Message signed");
+        log.atInfo()
+                .addKeyValue("signature", Base64.getEncoder().encodeToString(signature))
+                .log("Message signed");
 
         // Verifying the signature
         log.atInfo().log("Verifying the signature...");

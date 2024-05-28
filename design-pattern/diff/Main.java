@@ -50,7 +50,8 @@ class Main {
         return sb.toString();
     }
 
-    private static void performEncryptionDecryption(String aesType, String input, SecretKey key, IvParameterSpec iv) throws Exception {
+    private static void performEncryptionDecryption(String aesType, String input, SecretKey key, IvParameterSpec iv)
+            throws Exception {
         String cipherText = encrypt(ALGORITHM, input, key, iv);
         String plainText = decrypt(ALGORITHM, cipherText, key, iv);
 

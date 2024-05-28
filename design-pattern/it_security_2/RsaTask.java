@@ -27,12 +27,16 @@ class RsaTask {
             log.atInfo().log("Saving public key to 'public.key'...");
             saveKeyToFile("public.key", pair.getPublic());
             log.atInfo()
-                    .addKeyValue("encoded public key", Base64.getEncoder().encodeToString(pair.getPublic().getEncoded()))
+                    .addKeyValue(
+                            "encoded public key",
+                            Base64.getEncoder().encodeToString(pair.getPublic().getEncoded()))
                     .log("Public key saved.");
             log.atInfo().log("Saving private key to 'private.key'...");
             saveKeyToFile("private.key", pair.getPrivate());
             log.atInfo()
-                    .addKeyValue("encoded private key", Base64.getEncoder().encodeToString(pair.getPrivate().getEncoded()))
+                    .addKeyValue(
+                            "encoded private key",
+                            Base64.getEncoder().encodeToString(pair.getPrivate().getEncoded()))
                     .log("Private key saved.");
 
             // Encrypt and decrypt message
