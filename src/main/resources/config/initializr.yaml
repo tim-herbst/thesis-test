@@ -1,0 +1,31 @@
+initializr:
+  group-id:
+    value: com.adesso
+  dependencies:
+    - name: Web
+      content:
+        - name: Web
+          id: web
+  languages:
+    - name: Java
+      id: java
+      default: true
+    - name: Kotlin
+      id: kotlin
+      default: false
+  javaVersions:
+    - id: 22
+      default: true
+  packagings:
+    - name: Jar
+      id: jar
+      default: true
+  types:
+    - name: Maven Project
+      id: maven-project
+      description: Generate a Maven based project archive
+      tags:
+        build: maven
+        format: project
+      default: true
+      action: /starter.zip
