@@ -1,11 +1,21 @@
 initializr:
   group-id:
+    title: adesso group
+    description: The group id of the project
     value: com.adesso
   dependencies:
     - name: Web
       content:
         - name: Web
           id: web
+    - name: Utilities
+      content:
+        - name: Mapstruct
+          id: mapstruct
+          groupId: org.mapstruct
+          artifactId: mapstruct
+          version: "1.5.3.Final"
+          description: Mapstruct object mapper library
   languages:
     - name: Java
       id: java
