@@ -23,6 +23,16 @@ initializr:
     - name: Kotlin
       id: kotlin
       default: false
+  bootVersions:
+    - id: 3.2.3
+      name: 3.2.3
+      default: false
+    - id: 2.3.12.RELEASE
+      name: 2.3.12 (RELEASE)
+      default: false
+    - id: 3.3.1
+      name: 2.3.2
+      default: true
   javaVersions:
     - id: 22
       name: 22
