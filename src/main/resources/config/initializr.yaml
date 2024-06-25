@@ -25,8 +25,17 @@ initializr:
       default: false
   javaVersions:
     - id: 22
-      name: newest Java version
+      name: 22
       default: true
+    - id: 21
+      name: 21
+      default: false
+    - id: 11
+      name: 11
+      default: false
+    - id: 17
+      name: 17
+      default: false
   packagings:
     - name: Jar
       id: jar
