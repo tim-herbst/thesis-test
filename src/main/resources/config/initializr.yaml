@@ -40,3 +40,11 @@ initializr:
         format: project
       default: true
       action: /starter.zip
+    - name: Gradle Project
+      id: gradle-project
+      description: Generate a Gradle based project archive
+      tags:
+        build: gradle
+        format: project
+      default: false
+      action: /starter.zip
