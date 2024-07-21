@@ -1,0 +1,5 @@
+package de.hft_stuttgart.it_security_2.test.control;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class DummyServiceTest {}
